@@ -9,7 +9,7 @@ sequenceDiagram
 
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activar servidor
-    Servidor-->>Navegador: documento HTML 
+    Servidor-->>Navegador: documento HTML
     desactivar servidor
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
