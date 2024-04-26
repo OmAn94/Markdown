@@ -21,6 +21,10 @@ Browser(Using POST method)-->Server(https://studies.cs.helsinki.fi/exampleapp/ne
 graph TD;
 Browser(Send form creating 5 request to the server, first one send the form 'HTTP POST')-->Server(Responds with 'HTTP 302');
 Server(Server send 'HTTP 302' it's an URL requesting the browser to refresh)-->Browser(Browser refresh and send a 'HTTP GET');
+```
+
+```mermaid
+graph TD;
 Browser(Browser sends 'HTTP GET' to server after refresh, triggering 3 requests)-->Server(Server recieve the request and send the data)
 Server(send to browser notes, main.css and data.json)-->Browser(Refresh and create 3 request);
 ```
