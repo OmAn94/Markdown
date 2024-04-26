@@ -3,5 +3,6 @@ En este apartado creare markdowns para completar el apartado 0 del curso de Full
 # Diagrama de Secuencias
  ### ** Navegador && Servidor**
 ```mermaid
+graph TD;
 Navegador-->Servidor;
 ```
