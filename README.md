@@ -15,3 +15,11 @@ Browser(Using POST method)-->Server(https://studies.cs.helsinki.fi/exampleapp/ne
 ```
 > [!NOTE]
 > We write in the form the text we want to send, then we click in the button SAVE. This triggers the new_note 302 Post Request, and it send to the server.
+
+
+```mermaid
+graph TD;
+Server(send to browser notes, main.css and data.json)-->Browser(Refresh and create 3 request);
+```
+> [!NOTE]
+> First the server recieve the data, from req.body then it creates a new note object and creates an array called 'notes'; inside the note object we find the data and date. Browser refresh and create 3 requests.  From the server we recieve [notes, main.css, data.json].
