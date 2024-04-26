@@ -5,7 +5,4 @@ En este apartado creare markdowns para completar el apartado 0 del curso de Full
 ```mermaid
 graph TD;
     A(Navegador)-->B(Servidor);
-    A-->C;
-    B-->D;
-    C-->D;
 ```
