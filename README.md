@@ -4,13 +4,13 @@ En este apartado creare markdowns para completar el apartado 0 del curso de Full
  ### ** Navegador && Servidor**
 ```mermaid
 sequenceDiagram
-    participant Navegador
-    participant Servidor
+    participant browser
+    participant server
 
-    Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activate servidor
-    Servidor-->>Navegador: documento HTML
-    deactivate servidor
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML document
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
