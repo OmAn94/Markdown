@@ -30,3 +30,15 @@ Server(send to browser notes, main.css and data.json)-->Browser(Refresh and crea
 ```
 > [!NOTE]
 > First the server recieve the data, from req.body then it creates a new note object and creates an array called 'notes'; inside the note object we find the data and date. Browser refresh and create 3 requests.  From the server we recieve [notes, main.css, data.json].
+
+
+```mermaid
+graph TD;
+    A[Usuario] -->|Envía entrada| B(Servidor);
+    B -->|Solicitud POST| C(new_note);
+    C -->|Redirección| D(notes);
+    D -->|Solicitud GET| E(main.css);
+    D -->|Solicitud GET| F(main.js);
+    D -->|Solicitud GET| G(data.json);
+
+```
