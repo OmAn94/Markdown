@@ -14,6 +14,6 @@ graph TD;
 
 ```
 > [!NOTE]
-> User send a note from Browser, this triggers the from action and the post method in the html and send the server this information.
+> User send a note from Browser, this triggers the from action and the HTTP post method to the new_note server direction.
 >Server response is a HTTP 302, this is a URL refresh request to the browser, when executed, it creates HTTP GET to the URL before mentioned.
 >Browser refresh notes page, triggering 3 HTTP requests, server then send main.css, main.js and data.json.
