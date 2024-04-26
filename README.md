@@ -17,28 +17,14 @@ Browser(Using POST method)-->Server(https://studies.cs.helsinki.fi/exampleapp/ne
 > We write in the form the text we want to send, then we click in the button SAVE. This triggers the new_note 302 Post Request, and it send to the server.
 
 
-```mermaid
-graph TD;
-Browser(Send form creating 5 request to the server, first one send the form 'HTTP POST')-->Server(Responds with 'HTTP 302');
-Server(Server send 'HTTP 302' it's an URL requesting the browser to refresh)-->Browser(Browser refresh and send a 'HTTP GET');
-```
 
 ```mermaid
 graph TD;
-Browser(Browser sends 'HTTP GET' to server after refresh, triggering 3 requests)-->Server(Server recieve the request and send the data)
-Server(send to browser notes, main.css and data.json)-->Browser(Refresh and create 3 request);
-```
-> [!NOTE]
-> First the server recieve the data, from req.body then it creates a new note object and creates an array called 'notes'; inside the note object we find the data and date. Browser refresh and create 3 requests.  From the server we recieve [notes, main.css, data.json].
-
-
-```mermaid
-graph TD;
-    A[Usuario] -->|Envía entrada| B(Servidor);
-    B -->|Solicitud POST| C(new_note);
-    C -->|Redirección| D(notes);
-    D -->|Solicitud GET| E(main.css);
-    D -->|Solicitud GET| F(main.js);
-    D -->|Solicitud GET| G(data.json);
+    A[User] -->|Send Note| B(Server);
+    B -->| POST Request| C(new_note);
+    C -->|redirection| D(notes);
+    D -->|Request GET| E(main.css);
+    D -->|Request GET| F(main.js);
+    D -->|Request GET| G(data.json);
 
 ```
