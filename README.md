@@ -8,9 +8,9 @@ sequenceDiagram
     participant Servidor
 
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activar servidor
+    activate servidor
     Servidor-->>Navegador: documento HTML
-    desactivar servidor
+    deactivate servidor
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
