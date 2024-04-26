@@ -13,3 +13,5 @@ Browser-->Server;
 graph TD;
 Browser(Using POST method)-->Server(https://studies.cs.helsinki.fi/exampleapp/new_note; 'Server verifies with a 302 status response that the information has been recieved');
 ```
+> [!NOTE]
+> We write in the form the text we want to send, then we click in the button SAVE. This triggers the new_note 302 Post Request, and it send to the server.
