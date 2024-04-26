@@ -1,11 +1,11 @@
 En este apartado creare markdowns para completar el apartado 0 del curso de FullStack Open de la universidad de Helsinki, Finlandia.
 
 # Diagrama de Secuencias
- ### **A = Navegador && B = Servidor**
+ ### ** Navegador && Servidor**
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
+    participant Navegador
+    participant Servidor
     Alice->>John: Hello John, how are you?
     loop HealthCheck
         John->>John: Fight against hypochondria
