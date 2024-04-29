@@ -25,7 +25,7 @@ graph TD;
 
 graph LR
     A[Usuario] -- Accede --> B((Aplicación de Notas))
-    B --> C(Servidor)
+    B --> C(Servidor) --> D(Actualiza la página)
     C --> B
     B --> D(Actualiza la página)
 
