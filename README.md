@@ -1,7 +1,7 @@
 En este apartado creare markdowns para completar el apartado 0 del curso de FullStack Open de la universidad de Helsinki, Finlandia.
 
 # Diagrama de Secuencias
- ### ** Browser && Server .... 0.4 ** 
+## ** Browser && Server .... 0.4 ** 
 
 ```mermaid
 graph TD;
@@ -35,7 +35,7 @@ graph LR
 >After interacting with the server, the SPA updates the page content.
 
 
-### **SPA 0.6 Explanation. **
+## **SPA 0.6 Explanation. **
 
 ```mermaid
 sequenceDiagram
