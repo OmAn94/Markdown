@@ -19,7 +19,7 @@ graph TD;
 >Browser refresh notes page, triggering 3 HTTP requests, server then send main.css, main.js and data.json.
 
 
-## **SPA 0.5**
+## **SPA 0.5 Explanation**
 
 ```mermaid
 
@@ -28,8 +28,6 @@ graph LR
     B --> C(Servidor)
     C --> B
     B --> D{Actualiza la página}
-    D -- Sí --> B
-    D -- No --> E((Fin))
 
 ```
 > [!NOTE]
