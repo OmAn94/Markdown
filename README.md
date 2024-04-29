@@ -27,7 +27,7 @@ graph LR
     A[Usuario] -- Accede --> B((Aplicación de Notas))
     B --> C(Servidor)
     C --> B
-    B --> D{Actualiza la página}
+    B --> D(Actualiza la página)
 
 ```
 > [!NOTE]
