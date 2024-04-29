@@ -24,8 +24,8 @@ graph TD;
 ```mermaid
 
 graph LR
-    A[Usuario] -- Accede --> B((Aplicación de Notas))
-    B --> C(Servidor) --> D(Actualiza la página)
+    A[User] -- Acces --> B((Notes SPA))
+    B --> C(Server) --> D(Refresh Content)
     D --> B
 
 ```
