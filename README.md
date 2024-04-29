@@ -19,7 +19,26 @@ graph TD;
 >Browser refresh notes page, triggering 3 HTTP requests, server then send main.css, main.js and data.json.
 
 
-### **SPA 0.5 Explanation. **
+## **SPA 0.5**
+
+```mermaid
+
+graph LR
+    A[Usuario] -- Accede --> B((Aplicación de Notas))
+    B --> C(Servidor)
+    C --> B
+    B --> D{Actualiza la página}
+    D -- Sí --> B
+    D -- No --> E((Fin))
+
+```
+> [!NOTE]
+> User send a note from Browser, this triggers the from action and the HTTP post method to the new_note server direction.
+>Server response is a HTTP 302, this is a URL refresh request to the browser, when executed, it creates HTTP GET to the URL before mentioned.
+>Browser refresh notes page, triggering 3 HTTP requests, server then send main.css, main.js and data.json.
+
+
+### **SPA 0.6 Explanation. **
 
 ```mermaid
 sequenceDiagram
