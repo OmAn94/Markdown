@@ -27,10 +27,10 @@ sequenceDiagram
     participant Browser
     participant Server
 
-    User-->>Browser: Write the content of the Note
-    User -->| Click the save button|
+    User->>Browser: Write the content of the Note
+    User ->| Click the save button|
     Browser->>Server: POST to new_note_spa
-    Server-->>Browser: 201 Created
+    Server->>Browser: 201 Created
 
 ```
 
