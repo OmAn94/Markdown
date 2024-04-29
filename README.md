@@ -28,7 +28,7 @@ sequenceDiagram
     participant Server
 
     User-->>Browser: Write the content of the Note
-    : Click the save button
+    User -->|Click the save button|
     Browser->>Server: POST to new_note_spa
     Server-->>Browser: 201 Created
 
