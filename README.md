@@ -30,9 +30,9 @@ graph LR
 
 ```
 > [!NOTE]
-> User send a note from Browser, this triggers the from action and the HTTP post method to the new_note server direction.
->Server response is a HTTP 302, this is a URL refresh request to the browser, when executed, it creates HTTP GET to the URL before mentioned.
->Browser refresh notes page, triggering 3 HTTP requests, server then send main.css, main.js and data.json.
+> User (A) accesses the SPA version of the note-taking application.
+>The SPA (B) communicates with the server (C) to fetch data or perform actions.
+>After interacting with the server, the SPA updates the page content.
 
 
 ### **SPA 0.6 Explanation. **
